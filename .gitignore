@@ -1,0 +1,39 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.phpactor.json
+/.claude
+/.codex
+/.cursor/
+/.idea
+/.nova
+/.vscode
+/.zed
+
+# Environment / secrets
+.env
+.env.backup
+.env.production
+/auth.json
+
+# Logs
+*.log
+
+# Dependencies
+/vendor
+composer.lock
+
+# Test artifacts
+.phpunit.cache
+.phpunit.result.cache
+
+# Generated
+_ide_helper.php
+
+# Internal design notes (not meant for the public repo)
+/設計メモ.md
+
+# Miscellaneous
+/link-shared-memory.ps1

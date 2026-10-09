@@ -1,0 +1,47 @@
+{
+    "name": "do-it-s/claude-client",
+    "type": "library",
+    "description": "A small Claude Messages API client for Laravel: per-feature API keys, full request/response JSONL logging, and a vision helper.",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "illuminate/support": "^13.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.27",
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "*",
+        "pestphp/pest": "^4.7",
+        "pestphp/pest-plugin-laravel": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "DoITs\\ClaudeClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DoITs\\ClaudeClient\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DoITs\\ClaudeClient\\ClaudeClientServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "lint": "pint"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
